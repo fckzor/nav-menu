@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+li {
+    padding: 10px;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(241, 229, 229);
+    line-height: 50px;
+    text-align: center;
+}
+
+/* все что касается меню */
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+}
+.nav__ul {
+    width: 730px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.dropdown__wrapper {
+    position: relative;
+}
+.dropdown__wrapper:hover .dropdown__list {
+    display: block;
+}
+.dropdown__toggler {
+    cursor: pointer;
+}
+.dropdown__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    height: auto;
+    max-height: 400px;
+    overflow-y: auto;
+    background: #ffffff;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
